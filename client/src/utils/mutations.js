@@ -40,7 +40,7 @@ export const ADD_COMMENT = gql`
   }
 `;
 
-export const ADD ORDER = gql`
+export const ADD_ORDER = gql`
   mutation addOrder($products: [ID]!) {
     addOrder(products: $products) {
       purchaseDate
@@ -70,7 +70,7 @@ export const UPDATE_PRODUCT_QUANTITY = gql`
   }
 `;
 
-export const QUERY CHECKOUT = gql`
+export const QUERY_CHECKOUT = gql`
   query getCheckout {
     checkout {
       session
@@ -78,7 +78,7 @@ export const QUERY CHECKOUT = gql`
   }
 `;
 
-export const QUERY USER = gql`
+export const QUERY_USER = gql`
   query getUser {
     user {
       firstName
