@@ -26,17 +26,3 @@ export const QUERY_PRODUCTS = gql`
   }
 `;
   
-export const QUERY_PRODUCTS_BY_CATEGORY = gql`
-  query getProducts($categoryId:ID!) {
-    products {
-      _id
-      name
-      UPC
-      description
-      quantity
-      price
-   
-    
-    }
-  }
-`;

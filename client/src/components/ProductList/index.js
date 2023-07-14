@@ -181,12 +181,11 @@ const getURL=(name) =>{
     <h2>Select a puzzle</h2>
     <div className="container-fluid  flex-row">
     {products &&
-        products.map((product) => (
-          
+        products.map((product) => (   
           <Link className="" to={`/cart`}>
-          <div key={product._id} className="puzzleCard">
+          <div key={product._id} className="puzzleCard flex-column">
             <div className="puzzleCard-header">
-             <p>{product.name} </p> 
+      <p>{product.name}</p>
             </div>
             <div className="puzzleCard-body category-img">
             <img src={getURL(product.name)} alt={product.name}></img>
