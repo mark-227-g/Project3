@@ -2,8 +2,6 @@ import React from 'react';
 import CategoryList from '../components/CategoryList';
 import { useQuery } from '@apollo/client';
 import { QUERY_CATEGORYS } from '../utils/queries2';
-
-
 const Categories = () => {
   const { loading, data } = useQuery(QUERY_CATEGORYS);
   const categorys = data?.categorys || [];
@@ -20,7 +18,6 @@ const Categories = () => {
               title="Puzzle Category"
             />
           )}
-     
       </div>
     </main>
   );
